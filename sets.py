@@ -115,6 +115,8 @@ print(y)
 
 #Frozen sets: => Immutable sets
 
-z = frozenset {5, 3, 0, 1}
+z = frozenset ({5, 3, 0, 1})
 print(z)
 print(type(z))
+
+# z.add(8) # AttributeError: 'frozenset' object has no attribute 'add'
